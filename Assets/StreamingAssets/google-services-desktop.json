@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "53127051690",
+    "project_id": "fir-unitytestapp-3401d",
+    "storage_bucket": "fir-unitytestapp-3401d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53127051690:android:aaed621f3f35aebb5013d3",
+        "android_client_info": {
+          "package_name": "com.sesi.TestApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53127051690-sof14t7hh2ggq0fu3ou83jifblg44rso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sesi.TestApp",
+            "certificate_hash": "04daad4181e1c7e26368ee1c2ee2c04b56dbc026"
+          }
+        },
+        {
+          "client_id": "53127051690-536td4nvlodcndl5tpnqm3tamuiqd2ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABJrJnu2Vq5wUA3UYeyGW1vASpu3E94wU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53127051690-536td4nvlodcndl5tpnqm3tamuiqd2ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
