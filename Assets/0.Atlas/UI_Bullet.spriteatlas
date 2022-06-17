@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_Bullet
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 1ad0fd8894f9ae44dba7e94b6ff83bf2, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: bbdb2e718d2b05546b221a547d5ceec0, type: 3}
+  - {fileID: 21300000, guid: 6141ba91053c56d49a3aa376da0caa6b, type: 3}
+  - {fileID: 21300000, guid: ac9aef62d0df64949a237d3d31b90c75, type: 3}
+  - {fileID: 21300000, guid: e44df4b2efc30734b9f5a73113fcef70, type: 3}
+  - {fileID: 21300000, guid: 4f92ce13e5de55247a2ab9c92a16b2e7, type: 3}
+  - {fileID: 21300000, guid: 2d60d74352d97084e9cd3d7c8eae463d, type: 3}
+  - {fileID: 21300000, guid: 5d570273b46f719488d7699eef0b62ca, type: 3}
+  - {fileID: 21300000, guid: 30e87dc3dc8143949a439d4c85e4e1a0, type: 3}
+  - {fileID: 21300000, guid: 2e2054c4efb00a34982449c5df05cfcf, type: 3}
+  - {fileID: 21300000, guid: e864d89569949c648840111c75be8aeb, type: 3}
+  - {fileID: 21300000, guid: ff4904f5efe508a4f8fe301262bd4831, type: 3}
+  - {fileID: 21300000, guid: 98635b56473c90d46a3d760f0db41ba3, type: 3}
+  - {fileID: 21300000, guid: 5b037847cc1236d43937b3420c888df1, type: 3}
+  - {fileID: 21300000, guid: 399262b76c2a5144e84363e13d1aa3a7, type: 3}
+  - {fileID: 21300000, guid: f8219e1839c912a45b49b58eeb54fcf9, type: 3}
+  - {fileID: 21300000, guid: aac42968216282c428309732d4d10e40, type: 3}
+  - {fileID: 21300000, guid: 607f0379016991e41a7f5e022e7b16bd, type: 3}
+  - {fileID: 21300000, guid: 3a96d7f9a8dcc494884d8fcd35e52195, type: 3}
+  - {fileID: 21300000, guid: 3e3ee49ad4a267f439f0c012ae422a40, type: 3}
+  - {fileID: 21300000, guid: 4ad2cc9acd7a18b43a64b753f5849c41, type: 3}
+  - {fileID: 21300000, guid: e438ae9b5031a2f4189e506869178ed8, type: 3}
+  - {fileID: 21300000, guid: 12a1963fb06ac1240aa10935ca976417, type: 3}
+  - {fileID: 21300000, guid: 3890165f44ff9e04fa39fe816cf8018c, type: 3}
+  - {fileID: 21300000, guid: 972d157ff3a2db34e9ac27cfab79cde9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bullet_14
+  - bullet_3
+  - bullet_13
+  - bullet_1
+  - rock
+  - bullet_10
+  - bullet_7
+  - bullet_12
+  - bullet_0
+  - bullet_8
+  - bullet_20
+  - bullet_18
+  - bullet_4
+  - bullet_19
+  - bullet_22
+  - bullet_15
+  - bullet_9
+  - bullet_2
+  - bullet_11
+  - bullet_5
+  - bullet_21
+  - bullet_17
+  - bullet_6
+  - bullet_16
+  m_Tag: UI_Bullet
+  m_IsVariant: 0

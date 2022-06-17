@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: flag
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a8a9de68b07518747aa4d9d87abc7ff2, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 94739e0052d63f44d9b108bfac203a54, type: 3}
+  - {fileID: 21300000, guid: 49a6cac07b5bc224b92bda1807d65099, type: 3}
+  - {fileID: 21300000, guid: b6907ec0771a10340bef6bf6b066b71e, type: 3}
+  - {fileID: 21300000, guid: c19cabf0b6c8f5c4ea9e7ca59923b84a, type: 3}
+  - {fileID: 21300000, guid: 7d4dd3721d2d722438b3401badfb6d99, type: 3}
+  - {fileID: 21300000, guid: 0967bfe297d31f94fa43c3b458526c7e, type: 3}
+  - {fileID: 21300000, guid: 3bfcf6132def6a644b8713ee6f125230, type: 3}
+  - {fileID: 21300000, guid: ab696e6334a934f4abbf0a466bff7ddd, type: 3}
+  - {fileID: 21300000, guid: cfcff4747531c8647bfa98eccd2511f3, type: 3}
+  - {fileID: 21300000, guid: db24d69406e481149ad68fedb5c88ad7, type: 3}
+  - {fileID: 21300000, guid: d790ad05bc6f18b488324d38250be317, type: 3}
+  - {fileID: 21300000, guid: 45b36245630ed4b4ebeabb8a9d32eb1b, type: 3}
+  - {fileID: 21300000, guid: 9d0de245bed8d9b4a9d1eaf1f4470c21, type: 3}
+  - {fileID: 21300000, guid: 040393455b9140044908c5e732f6a5d1, type: 3}
+  - {fileID: 21300000, guid: c90737654e7360744b963dc253223df0, type: 3}
+  - {fileID: 21300000, guid: 14d797e5da72ef348a2e2eeedecb035e, type: 3}
+  - {fileID: 21300000, guid: 8401fb06cb423c040a00bfd604338946, type: 3}
+  - {fileID: 21300000, guid: 73a9fc8682714074e9a3eaef19615162, type: 3}
+  - {fileID: 21300000, guid: 1c8434c660d3a2d4b85c85870d3eba41, type: 3}
+  - {fileID: 21300000, guid: c86713275d05bdb46b3c7e5ec757aa52, type: 3}
+  - {fileID: 21300000, guid: 119bde97041297142a121de3abd47b4b, type: 3}
+  - {fileID: 21300000, guid: be873af75fba6d346a23ebdb75aa1682, type: 3}
+  - {fileID: 21300000, guid: 5d35a1588e6074544bcb85e378cec951, type: 3}
+  - {fileID: 21300000, guid: adcf8258a3556374d90491867ef80d0d, type: 3}
+  - {fileID: 21300000, guid: 5dd674d81feee2c44a83b2544cc1657b, type: 3}
+  - {fileID: 21300000, guid: 5b874ed8315ec3041bc08e5a3809275e, type: 3}
+  - {fileID: 21300000, guid: 55da7619efbb6ce4f9252b7902cc7c80, type: 3}
+  - {fileID: 21300000, guid: b096fd29020bb0b46b5d807fcd431f2f, type: 3}
+  - {fileID: 21300000, guid: c1697569dba61bb43a4de4e63571da82, type: 3}
+  - {fileID: 21300000, guid: e9d790ba3fff28c44a71d95b3642d30c, type: 3}
+  - {fileID: 21300000, guid: 8d8639daf94acaf40b43ea69a5ffc4d7, type: 3}
+  - {fileID: 21300000, guid: b6455e4b5101d4b4f88c4ca3a665dba2, type: 3}
+  - {fileID: 21300000, guid: af02117b338d9f946ae744f886d46a8b, type: 3}
+  - {fileID: 21300000, guid: 62d18b1c167985241b492e27724ea919, type: 3}
+  - {fileID: 21300000, guid: ce27b52c8524937469c98795a7652599, type: 3}
+  - {fileID: 21300000, guid: cafdd46c951a74049bd2c7b58fb998b7, type: 3}
+  - {fileID: 21300000, guid: 0656c62de2ff84d47a4ff6a9a0aa9428, type: 3}
+  - {fileID: 21300000, guid: 3fc194dd143c72548a43b0fcaa782055, type: 3}
+  - {fileID: 21300000, guid: 1abc1afda54715f4e9be79d691e962b9, type: 3}
+  - {fileID: 21300000, guid: 3feb9bfd2807a424e993a45b5da2fbc0, type: 3}
+  - {fileID: 21300000, guid: 791d591f140eb30479f49b9c0af5f5cb, type: 3}
+  - {fileID: 21300000, guid: 55b1a62f7cd3bd047817531227daa503, type: 3}
+  - {fileID: 21300000, guid: 9db2eb3fc4b4cdb44914aa87362c9b52, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Icon_LanguageFlag_Small_Rus
+  - Icon_LanguageFlag_Small_Ina
+  - Icon_LanguageFlag_Small_Eng
+  - Icon_LanguageFlag_Small_Pol
+  - Toggle_Check_Green
+  - Icon_LanguageFlag_Large_Ita
+  - Icon_LanguageFlag_Large_Ina
+  - Icon_LanguageFlag_Large_Rou
+  - Icon_LanguageFlag_Small_Tha
+  - Icon_LanguageFlag_Large_Eng
+  - Icon_LanguageFlag_Small_Jpn
+  - Icon_LanguageFlag_Large_Ara
+  - Icon_LanguageFlag_Small_Ita
+  - Icon_LanguageFlag_Large_Tha
+  - Icon_LanguageFlag_Small_Ukr
+  - Icon_LanguageFlag_Small_Prt
+  - Icon_LanguageFlag_Large_Tur
+  - Icon_LanguageFlag_Small_Pra
+  - Icon_LanguageFlag_Large_Esp
+  - Icon_LanguageFlag_Large_Swe
+  - Icon_LanguageFlag_Small_Fra
+  - Icon_LanguageFlag_Large_Jpn
+  - Icon_LanguageFlag_Large_Deu
+  - Icon_LanguageFlag_Small_Rou
+  - Icon_LanguageFlag_Small_Esp
+  - Icon_LanguageFlag_Small_Gre
+  - Icon_LanguageFlag_Large_Twn
+  - Icon_LanguageFlag_Small_Swe
+  - Icon_LanguageFlag_Small_Tur
+  - Icon_LanguageFlag_Large_Fra
+  - Icon_LanguageFlag_Large_Rus
+  - Icon_LanguageFlag_Small_Kor
+  - Icon_LanguageFlag_Large_Gre
+  - Icon_LanguageFlag_Large_Pra
+  - Icon_LanguageFlag_Large_Kor
+  - Icon_LanguageFlag_Small_Chn
+  - Icon_LanguageFlag_Large_Vnm
+  - Icon_LanguageFlag_Small_Deu
+  - Icon_LanguageFlag_Large_Prt
+  - Icon_LanguageFlag_Large_Pol
+  - Icon_LanguageFlag_Large_Ukr
+  - Icon_LanguageFlag_Large_Chn
+  - Icon_LanguageFlag_Small_Twn
+  m_Tag: flag
+  m_IsVariant: 0

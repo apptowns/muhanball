@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: shop
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: eb94d0b47d2aa914eb47769e1cbc4300, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 31d6fe30bfa710f47a9c993cdf3a181c, type: 3}
+  - {fileID: 21300000, guid: 0938c5221c876a748ba341664b638b03, type: 3}
+  - {fileID: 21300000, guid: 4f4e1f358f14d674a9ad06c8f93c1fff, type: 3}
+  - {fileID: 21300000, guid: 5aac1d069dd0a97489acfeecfe850711, type: 3}
+  - {fileID: 21300000, guid: a6d159d66e31e494497715ef84eb6f33, type: 3}
+  - {fileID: 21300000, guid: 2f51c378b8df0aa46813b4861da1dab6, type: 3}
+  - {fileID: 21300000, guid: 782699ec9415a604d950b6a5825c36a8, type: 3}
+  - {fileID: 21300000, guid: ebc5850d1a6ffdc44b51b2c6fe60292f, type: 3}
+  - {fileID: 21300000, guid: 701dc8dd1f0cb774586039e8e3e353da, type: 3}
+  - {fileID: 21300000, guid: 5421f32e9854fd9498b8ad9acab720e7, type: 3}
+  - {fileID: 21300000, guid: e4d6db3eb9d60a04d8cbc192c3b1e509, type: 3}
+  - {fileID: 21300000, guid: 1f205cee905f4ce4890eaa55c2896050, type: 3}
+  - {fileID: 21300000, guid: 30af861f4c8c141159c3c1ff5b424c3c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Icon_ShopIcon_Gem1
+  - Icon_ShopIcon_Gem4
+  - Icon_ShopIcon_Gold2
+  - Icon_ShopIcon_Gem3
+  - Icon_ShopIcon_SpecialChest
+  - Icon_ShopIcon_Gold4
+  - Icon_ShopIcon_Gem0
+  - Icon_ShopIcon_GemBox
+  - Icon_ShopIcon_Gold1
+  - Icon_ShopIcon_Gem2
+  - Icon_ShopIcon_Gold0
+  - Icon_ShopIcon_Gold3
+  - Frame_CardFrame00_BackGlow
+  m_Tag: shop
+  m_IsVariant: 0
