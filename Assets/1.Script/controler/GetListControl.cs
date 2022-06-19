@@ -25,7 +25,7 @@ public class GetListControl : MonoBehaviour
 	public string[] url;		// 웹주소
 	public string[] webData;    // 담아놓을 데이터 
 	const int checkCount = 150;
-	const int listCount = 8;
+	const int listCount = 9;
 	public void	NetData()
 	{		
 		if(Application.internetReachability == NetworkReachability.NotReachable) 
@@ -125,7 +125,7 @@ public class GetListControl : MonoBehaviour
 		url[6] = "https://docs.google.com/spreadsheets/d/1inBv3CSQAG1Q9oj9OYVbRz-PIJHYgwX-PccafHKtVp4/export?format=csv&gid=920679080";     // 업적 리스트
 
 		url[7] = "https://docs.google.com/spreadsheets/d/1inBv3CSQAG1Q9oj9OYVbRz-PIJHYgwX-PccafHKtVp4/export?format=csv&gid=1352402895";    // 확률 리스트 
-
+		url[8] = "https://docs.google.com/spreadsheets/d/1inBv3CSQAG1Q9oj9OYVbRz-PIJHYgwX-PccafHKtVp4/export?format=csv&gid=766699482";    // 확률 리스트 
 
 		yield return null;
 		UnityWebRequest www;
@@ -157,6 +157,9 @@ public class GetListControl : MonoBehaviour
 		DataManager.Instance.opAttackList = new List<Attack>();
 		DataManager.Instance.opBulList = new List<Bul>();
 		DataManager.Instance.perList = new List<float>();
+
+		DataManager.Instance.etcShopList = new List<Shop>();
+
 
 		//배열 구성 	
 		/////////////////////////////////////////////////////// 0		
@@ -319,7 +322,7 @@ public class GetListControl : MonoBehaviour
 			DataManager.Instance.etcAchieveList.Add(d);
 		} 
 		LogoManager.i.mes.text = "업적 리스트입니다.";
-		LogoManager.i.loadingBar.value = 900;
+		LogoManager.i.loadingBar.value = 800;
 
 
 		/////////////////////////////////////////////////////// 7		
@@ -330,7 +333,7 @@ public class GetListControl : MonoBehaviour
 			DataManager.Instance.perList.Add(float.Parse(dd[2])); 
 		}
 		LogoManager.i.mes.text = "확률 리스트입니다.";
-		LogoManager.i.loadingBar.value = 1000;
+		LogoManager.i.loadingBar.value = 900;
 
 		DataManager.Instance.itemWeightList = new List<int>();
 		data = webData[7].Split("\n"[0]);
@@ -342,6 +345,32 @@ public class GetListControl : MonoBehaviour
 		}
 
 
+		/////////////////////////////////////////////////////// 8	
+		data = webData[8].Split("\n"[0]);
+		for (int i = 2; i < data.Length; i++)
+		{
+			string[] dd = data[i].Split(","[0]);
+
+			Shop d			= new Shop();
+			d.id			= int.Parse(dd[0].Trim());
+			d.shopId		= dd[1];
+			d.title			= dd[2];
+			d.des			= dd[3];
+			d.valuekind		= int.Parse(dd[4]);
+			d.value			= int.Parse(dd[5]);
+			d.valuePresent	= new int[6];
+
+			for (int j = 0; j < d.valuePresent.Length; j++)
+			{
+				d.valuePresent[j] = int.Parse(dd[6 + j]);
+			}
+
+			DataManager.Instance.etcShopList.Add(d);
+		}
+		LogoManager.i.mes.text = "삽 리스트입니다.";
+		LogoManager.i.loadingBar.value = 1000;
+
+
 		//업적 관련 추가.. 함수 실행
 		AchieveSet();
 	}
@@ -349,7 +378,8 @@ public class GetListControl : MonoBehaviour
 
 
 	public void AchieveSet() 
-	{ 
+	{
+
 	}
 }
 

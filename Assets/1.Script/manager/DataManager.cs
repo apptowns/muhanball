@@ -14,6 +14,18 @@ public class Local
 	public string[] local;
 }
 
+public class Shop 
+{
+	public int id;
+	public string shopId;
+	public string title;
+	public string des;
+	public int valuekind;
+	public int value;
+	public int[] valuePresent; //다이아, 총알, 골드 미사일 폭탄 레이저
+
+}
+
 public class DataManager : MonoBehaviour
 {
 	private static DataManager instance;
@@ -44,18 +56,20 @@ public class DataManager : MonoBehaviour
 	public List<Local> LocalList;
 
 	//
-	public List<Attack> opAttackList;
-	public List<Bul> opBulList;
-	public List<Stage> stageList;
+	public List<Attack>		opAttackList;
+	public List<Bul>		opBulList;
+	public List<Stage>		stageList;
 
 	//etc
-	public List<Info> etcInfoList;
-	public List<Day> etcDayList;
-	public List<Present> etcPresentList;
-	public List<Achieve> etcAchieveList;
+	public List<Info>		etcInfoList;
+	public List<Day>		etcDayList;
+	public List<Present>	etcPresentList;
+	public List<Achieve>	etcAchieveList;
 
-	public List<float> perList;
-	public List<int> itemWeightList;
+	public List<Shop>		etcShopList;
+
+	public List<float>		perList;
+	public List<int>		itemWeightList;
 
 	public bool isFirst = false;
 	public bool isLogo = false;
