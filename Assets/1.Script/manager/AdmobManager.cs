@@ -10,19 +10,25 @@ public class AdmobManager : MonoBehaviour
     public Text LogText;
     public Button FrontAdsBtn, RewardAdsBtn;
 
+    public Image reon;
+    public Image reoff;
+    public Text time;
+    public int timeRemit = 300;
+
+    public int isValue;
 
     void Start()
     {
-        var requestConfiguration = new RequestConfiguration
-           .Builder()
-           .SetTestDeviceIds(new List<string>() { "1DF7B7CC05014E8" }) // test Device ID
-           .build();
-
-        MobileAds.SetRequestConfiguration(requestConfiguration);
+        timeRemit = 300;
+        time.text = (timeRemit / 60).ToString() + ":" + (timeRemit % 60).ToString();
+        reon.enabled = true;
+        reoff.enabled = false;
 
         LoadBannerAd();
         LoadFrontAd();
         LoadRewardAd();
+
+        ToggleBannerAd(true);
     }
 
     void Update()
@@ -45,8 +51,7 @@ public class AdmobManager : MonoBehaviour
 
     void LoadBannerAd()
     {
-        bannerAd = new BannerView(isTestMode ? bannerTestID : bannerID,
-            AdSize.SmartBanner, AdPosition.Bottom);
+        bannerAd = new BannerView(isTestMode ? bannerTestID : bannerID,AdSize.SmartBanner, AdPosition.Bottom);
         bannerAd.LoadAd(GetAdRequest());
         ToggleBannerAd(false);
     }
@@ -90,22 +95,55 @@ public class AdmobManager : MonoBehaviour
     const string rewardID = "ca-app-pub-4642965268273458/2672751795";
     RewardedAd rewardAd;
 
+    IEnumerator timecheck() 
+    {
+        RewardAdsBtn.interactable = false;
+        reon.enabled = false;
+        reoff.enabled = true;
+
+        while (timeRemit > 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            timeRemit -= 1;
+            time.text = (timeRemit/60).ToString() + ":" +(timeRemit%60).ToString();
+        }
+
+        RewardAdsBtn.interactable = true;
+        reon.enabled = true;
+        reoff.enabled = false;
+    }
 
     void LoadRewardAd()
     {
         rewardAd = new RewardedAd(isTestMode ? rewardTestID : rewardID);
-        
+
         rewardAd.LoadAd(GetAdRequest());
         rewardAd.OnUserEarnedReward += (sender, e) =>
         {
             LogText.text = "리워드 광고 성공";
-            DataManager.Instance.setDia(DataManager.Instance.getDia()+50);
-            Time.timeScale = 0.0f;
+
+            switch (isValue)
+            {
+                case 0:
+                    break;
+                    Debug.Log("다이아 보상");
+                    DataManager.Instance.setDia(DataManager.Instance.getDia() + 50);
+                    StartCoroutine(timecheck());
+
+                case 1:
+                    Debug.Log("보너스 씬 이동");
+                    DataManager.Instance.setStagePlay(DataManager.Instance.getStagePlay());
+                    TitleManager.i.goGame();
+                    break;
+            }
+
         };
     }
 
-    public void ShowRewardAd()
-    {       
+    public void ShowRewardAd(int b)
+    {
+        isValue = b;
+
         rewardAd.Show();
         LoadRewardAd();
     }

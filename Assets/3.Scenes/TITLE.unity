@@ -892,8 +892,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 807324100}
   m_HandleRect: {fileID: 807324099}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.062980615
+  m_Value: 1.0000004
+  m_Size: 0.051768597
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4588,6 +4588,7 @@ GameObject:
   - component: {fileID: 755667306}
   - component: {fileID: 755667309}
   - component: {fileID: 755667311}
+  - component: {fileID: 755667312}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4629,7 +4630,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -4673,6 +4674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingbarvalue: 0
+  GoogleLogin: {fileID: 1777034655}
+  GuestLogin: {fileID: 1147230579}
   titleMode: 0
   m_Atals: {fileID: 4343727234628468602, guid: f619a9adcc6d4ea408da3f6c0a63a947, type: 2}
   stagepos: {fileID: 2134320127}
@@ -4694,9 +4697,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755667305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a22aab12bc2e9c46921bca7f6b04dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &755667312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755667305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5e1485e5c94384a974ae8b333de6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &764122526
@@ -7398,8 +7413,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 755667309}
-        m_MethodName: quest
+      - m_Target: {fileID: 755667312}
+        m_MethodName: AnonyLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9275,7 +9290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -442.14996, y: 566.8494}
+  m_AnchoredPosition: {x: -442.14996, y: 566.8433}
   m_SizeDelta: {x: 899.0951, y: 18000}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1507996215
@@ -10938,7 +10953,7 @@ GameObject:
   - component: {fileID: 1777034656}
   - component: {fileID: 1777034655}
   m_Layer: 5
-  m_Name: ButtonFacebook
+  m_Name: ButtonGoogle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11007,8 +11022,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 755667309}
-        m_MethodName: login
+      - m_Target: {fileID: 755667312}
+        m_MethodName: GoogleLoginProcessing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

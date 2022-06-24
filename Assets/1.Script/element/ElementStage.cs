@@ -68,6 +68,7 @@ public class ElementStage : MonoBehaviour
         Debug.Log("씬 이동");
         SoundManager.Instance.play(2);
         DataManager.Instance.setStagePlay(id *10);
+
         TitleManager.i.goGame();
     }
 }

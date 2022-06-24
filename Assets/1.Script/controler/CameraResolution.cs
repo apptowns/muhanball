@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraResolution : MonoBehaviour
-{
-     
+{     
     void Start()
     {
         Camera camera = GetComponent<Camera>();
